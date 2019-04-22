@@ -1,6 +1,6 @@
 ## 环境
 
-> 环境：httpclient+jsonpath+testng+ExtentReport(jdk8)  
+> 环境：Springboot+httpclient+jsonpath+testng+ExtentReport(jdk8)  
 
 
 ## 运行
