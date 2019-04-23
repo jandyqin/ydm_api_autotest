@@ -10,16 +10,20 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.ydm.api_autotest.utils.ReportUtil;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.CacheConfig;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
 import java.io.File;
 import java.util.*;
 
-
+@CacheConfig(cacheNames = "api_autotest")
 public class ExtentTestNGIReporterListener implements IReporter {
     //生成的路径以及文件名
-    private static final String OUTPUT_FOLDER = "test-output/";
+    @Value("${repor.OUTPUT_FOLDER}")
+    private static final String OUTPUT_FOLDER = "src/main/resources/static/";
+    @Value("${repor.FILE_NAME}")
     private static final String FILE_NAME = "index.html";
 
     private ExtentReports extent;
