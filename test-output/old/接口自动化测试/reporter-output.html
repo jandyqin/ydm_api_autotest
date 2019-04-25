@@ -1,0 +1,230 @@
+<h2>Reporter output</h2><table><tr><td>1556072536681====api config path:C:\Users\dell\IdeaProjects\api_autotest\api-config.xml</td></tr>
+<tr><td>1556072537738====--- test start ---</td></tr>
+<tr><td>1556072537738====method:get</td></tr>
+<tr><td>1556072537738====url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=1@qq.com&password=21232f297a57a5a743894a0e4a801fc3</td></tr>
+<tr><td>1556072537738====param:</td></tr>
+<tr><td>1556072540821====返回状态码：200</td></tr>
+<tr><td>1556072540825====resp:{"msg":"登陆成功！!","state":"0","token":"5389bd42e38f63aaa023fd6e63a05832"}</td></tr>
+<tr><td>1556072540825====验证数据：$.state=0</td></tr>
+<tr><td>1556072540897====验证转换后的值0=0</td></tr>
+<tr><td>1556072540899====存储公共参数   first_state值为：0.</td></tr>
+<tr><td>1556072540899====存储公共参数   first_token值为：5389bd42e38f63aaa023fd6e63a05832.</td></tr>
+<tr><td>1556072540899====--- test start ---</td></tr>
+<tr><td>1556072540899====method:get</td></tr>
+<tr><td>1556072540899====url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=1@qq.com&password=123</td></tr>
+<tr><td>1556072540899====param:</td></tr>
+<tr><td>1556072543179====返回状态码：200</td></tr>
+<tr><td>1556072543180====resp:{"msg":"密码错误!","state":"1","token":""}</td></tr>
+<tr><td>1556072543180====验证数据：$.state=1</td></tr>
+<tr><td>1556072543181====验证转换后的值1=1</td></tr>
+<tr><td>1556072543182====--- test start ---</td></tr>
+<tr><td>1556072543182====method:get</td></tr>
+<tr><td>1556072543182====url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=111111111111@qq.com&password=123</td></tr>
+<tr><td>1556072543182====param:</td></tr>
+<tr><td>1556072545796====返回状态码：200</td></tr>
+<tr><td>1556072545797====resp:{"msg":"登陆失败-账号不存在！","state":"6","token":""}</td></tr>
+<tr><td>1556072545798====验证数据：$.state=6</td></tr>
+<tr><td>1556072545798====验证转换后的值6=6</td></tr>
+<tr><td>1556072545799====--- test start ---</td></tr>
+<tr><td>1556072545799====method:post</td></tr>
+<tr><td>1556072545799====url:https://blog.qinsy.cn/DAdmin/loginadmin.do</td></tr>
+<tr><td>1556072545799====param:name=111111111111@qq.com&password=123</td></tr>
+<tr><td>1556072545992====返回状态码：500</td></tr>
+<tr><td>1556072545995====resp:<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Request processing failed; nested exception is java.lang.NullPointerException</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>java.lang.NullPointerException
+	com.jandy.Service.Impl.UserServiceImpl.UserNameType(UserServiceImpl.java:39)
+	com.jandy.Service.Impl.UserServiceImpl.getValidationUser(UserServiceImpl.java:102)
+	com.jandy.controller.DAdminController.Login(DAdminController.java:124)
+	sun.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/8.5.31</h3></body></html></td></tr>
+<tr><td>1556072545996====验证数据：$.state=1</td></tr>
+<tr><td>1556072545997====--- test start ---</td></tr>
+<tr><td>1556072545997====method:post</td></tr>
+<tr><td>1556072545997====url:https://blog.qinsy.cn/DAdmin/loginadmin.do</td></tr>
+<tr><td>1556072545997====param:{"name":"1@qq.com","password":"00"}</td></tr>
+<tr><td>1556072546923====返回状态码：500</td></tr>
+<tr><td>1556072546927====resp:<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Request processing failed; nested exception is java.lang.NullPointerException</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>java.lang.NullPointerException
+	com.jandy.Service.Impl.UserServiceImpl.UserNameType(UserServiceImpl.java:39)
+	com.jandy.Service.Impl.UserServiceImpl.getValidationUser(UserServiceImpl.java:102)
+	com.jandy.controller.DAdminController.Login(DAdminController.java:124)
+	sun.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/8.5.31</h3></body></html></td></tr>
+<tr><td>1556072546929====验证数据：$.state=6</td></tr>
+<tr><td>1556072546929====--- test start ---</td></tr>
+<tr><td>1556072546930====method:post</td></tr>
+<tr><td>1556072546930====url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=1@qq.com&password=123</td></tr>
+<tr><td>1556072546930====param:{"name":"1@qq.com","password":"00"}</td></tr>
+<tr><td>1556072549548====返回状态码：200</td></tr>
+<tr><td>1556072549549====resp:{"msg":"密码错误!","state":"1","token":""}</td></tr>
+<tr><td>1556072549549====验证数据：$.state=6</td></tr>
+<tr><td>1556072549549====验证转换后的值1=6</td></tr>
+<tr><td>1556072549551====--- test start ---</td></tr>
+<tr><td>1556072549551====method:post</td></tr>
+<tr><td>1556072549551====url:https://blog.qinsy.cn/SendCodeT.do</td></tr>
+<tr><td>1556072549551====param:{"name":"1@qq.com","password":"00"}</td></tr>
+<tr><td>1556072549735====返回状态码：500</td></tr>
+<tr><td>1556072549737====resp:<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Request processing failed; nested exception is java.lang.NullPointerException</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>java.lang.NullPointerException
+	com.jandy.Service.Impl.UserServiceImpl.UserNameType(UserServiceImpl.java:39)
+	com.jandy.Service.Impl.UserServiceImpl.getValidationUser(UserServiceImpl.java:102)
+	com.jandy.controller.UserController.SendCodeT(UserController.java:156)
+	sun.reflect.GeneratedMethodAccessor134.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/8.5.31</h3></body></html></td></tr>
+<tr><td>1556072549738====验证数据：$.state=5</td></tr>
+<tr><td>1556072549738====--- test start ---</td></tr>
+<tr><td>1556072549738====method:post</td></tr>
+<tr><td>1556072549738====url:https://blog.qinsy.cn/login2.do</td></tr>
+<tr><td>1556072549739====param:{"username":"1@qq.com","password":"00"}</td></tr>
+<tr><td>1556072550659====返回状态码：500</td></tr>
+<tr><td>1556072550662====resp:<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Request processing failed; nested exception is net.sf.json.JSONException: null object</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is net.sf.json.JSONException: null object
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>net.sf.json.JSONException: null object
+	net.sf.json.JSONObject.verifyIsNull(JSONObject.java:2856)
+	net.sf.json.JSONObject.getString(JSONObject.java:2172)
+	com.jandy.controller.UserController.Login2(UserController.java:301)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/8.5.31</h3></body></html></td></tr>
+<tr><td>1556072550662====验证数据：$.state=5</td></tr>
+<tr><td>1556072550662====--- test start ---</td></tr>
+<tr><td>1556072550663====method:post</td></tr>
+<tr><td>1556072550663====url:http://coolaf.com/tool/params</td></tr>
+<tr><td>1556072550663====param:p=ptest&p=test2</td></tr>
+<tr><td>1556072550755====返回状态码：200</td></tr>
+<tr><td>1556072550755====resp:request params
+GET:
+POST:
+
+
+Header:
+Connection:[upgrade]
+Content-Length:[15]
+Content-Type:[application/json]
+User-Agent:[Apache-HttpClient/4.5.8 (Java/1.8.0_131)]
+X-Forwarded-For:[183.49.47.160]
+X-Real-Ip:[183.49.47.160]
+</td></tr>
+<tr><td>1556072550755====--- test start ---</td></tr>
+<tr><td>1556072550755====method:post</td></tr>
+<tr><td>1556072550755====url:http://coolaf.com/tool/params</td></tr>
+<tr><td>1556072550755====param:{"p":"ptest","p":"test2"}</td></tr>
+<tr><td>1556072550795====返回状态码：200</td></tr>
+<tr><td>1556072550795====resp:request params
+GET:
+POST:
+cookie:cook=cook;
+
+Header:
+Content-Length:[25]
+Content-Type:[application/json]
+User-Agent:[Apache-HttpClient/4.5.8 (Java/1.8.0_131)]
+Cookie:[cook=cook]
+X-Forwarded-For:[183.49.47.160]
+X-Real-Ip:[183.49.47.160]
+Connection:[upgrade]
+</td></tr>
+</table>

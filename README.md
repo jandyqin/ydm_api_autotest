@@ -10,7 +10,7 @@
 ## 执行报告查看
 1. testng.xml执行可视化报告：${workspace}/test-output/index.html
 2. maven执行报告：${workspace}/target/test-output/index.html
-
+3. 先执行testng.xml再执行ApiAutotestApplication，在http://localhost/index.html查看
 ## api-config.xml配置
 
 > api请求根路径、请求头及初始化参数值可以在api-config上进行配置。
@@ -39,7 +39,6 @@
 ## api用例(case/api-data.xls)
 
 > api请求用例具体数据。除表头外，一行代表一个api用例。执行时会依次从左到右，从上到下执行。
-
 - run：
 标记为‘Y’时，该行数据会被读取执行。
 - description：

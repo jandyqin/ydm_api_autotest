@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <rootUrl>https://blog.qinsy.cn</rootUrl>
+    <rootUrl>https://saas.ydm01.cn</rootUrl>
     <headers>
         <!-- 配置为自己的参数 -->
-        <header name="apikey" value="123456"></header>
+        <!--<header name="apikey" value="123456"></header>-->
+        <header name="Content-type" value="application/json"></header>
+        <header name="charset" value="utf-8"></header>
+        <header name="Authorization" value="Bearer 0b0981cb-846e-4810-b92f-1562ff012bbd"></header>
     </headers>
     <params>
-    	<param name="test" value="value"></param>
+    	<param name="account" value="13530852030"></param>
+        <param name="pwd" value="e10adc3949ba59abbe56e057f20f883e"></param>
     </params>
     <project_name>接口自动化测试报告</project_name>
 </root>

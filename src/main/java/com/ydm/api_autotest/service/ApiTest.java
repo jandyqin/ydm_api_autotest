@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.ydm.api_autotest.beans.ApiDataBean;
 import com.ydm.api_autotest.configs.ApiConfig;
 import com.ydm.api_autotest.listeners.AutoTestListener;
+import com.ydm.api_autotest.listeners.ExtentTestNGIReporterListener;
 import com.ydm.api_autotest.listeners.RetryListener;
 import com.ydm.api_autotest.utils.FileUtil;
 import com.ydm.api_autotest.utils.RandomUtil;

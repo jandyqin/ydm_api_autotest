@@ -1,0 +1,153 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 131072 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=31684, tid=0x0000000000007bf4
+#
+# JRE version:  (8.0_131-b11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.131-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000248b800):  JavaThread "Unknown thread" [_thread_in_vm, id=31732, stack(0x0000000002860000,0x0000000002960000)]
+
+Stack: [0x0000000002860000,0x0000000002960000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000248b800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=31732, stack(0x0000000002860000,0x0000000002960000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 57344K, used 983K [0x0000000780800000, 0x0000000784800000, 0x00000007c0000000)
+  eden space 49152K, 2% used [0x0000000780800000,0x00000007808f5c38,0x0000000783800000)
+  from space 8192K, 0% used [0x0000000784000000,0x0000000784000000,0x0000000784800000)
+  to   space 8192K, 0% used [0x0000000783800000,0x0000000783800000,0x0000000784000000)
+ ParOldGen       total 131072K, used 0K [0x0000000701800000, 0x0000000709800000, 0x0000000780800000)
+  object space 131072K, 0% used [0x0000000701800000,0x0000000701800000,0x0000000709800000)
+ Metaspace       used 770K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 75K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000011d20000,0x0000000012320000] byte_map_base: 0x000000000e514000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005ca5c720
+ Begin Bits: [0x0000000012e70000, 0x0000000015e10000)
+ End Bits:   [0x0000000015e10000, 0x0000000018db0000)
+
+Polling page: 0x0000000000330000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000002960000, 0x0000000002bd0000, 0x0000000011960000]
+ total_blobs=58 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.099 loading class java/lang/Short
+Event: 0.099 loading class java/lang/Short done
+Event: 0.099 loading class java/lang/Integer
+Event: 0.099 loading class java/lang/Integer done
+Event: 0.099 loading class java/lang/Long
+Event: 0.099 loading class java/lang/Long done
+Event: 0.100 loading class java/lang/NullPointerException
+Event: 0.100 loading class java/lang/NullPointerException done
+Event: 0.100 loading class java/lang/ArithmeticException
+Event: 0.100 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x000000013fac0000 - 0x000000013faf7000 	E:\JDK\bin\java.exe
+0x0000000077880000 - 0x0000000077a2a000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077760000 - 0x000000007787f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd9d0000 - 0x000007fefda3a000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefef60000 - 0x000007feff03b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff6e0000 - 0x000007feff77f000 	C:\Windows\system32\msvcrt.dll
+0x000007feff880000 - 0x000007feff89f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefedc0000 - 0x000007fefeeed000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077660000 - 0x000000007775a000 	C:\Windows\system32\USER32.dll
+0x000007fefeef0000 - 0x000007fefef57000 	C:\Windows\system32\GDI32.dll
+0x000007feff3d0000 - 0x000007feff3de000 	C:\Windows\system32\LPK.dll
+0x000007fefdde0000 - 0x000007fefdeab000 	C:\Windows\system32\USP10.dll
+0x000007fefbc70000 - 0x000007fefbe64000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007feff460000 - 0x000007feff4d1000 	C:\Windows\system32\SHLWAPI.dll
+0x000007feff140000 - 0x000007feff16e000 	C:\Windows\system32\IMM32.DLL
+0x000007feff8a0000 - 0x000007feff9a9000 	C:\Windows\system32\MSCTF.dll
+0x0000000074540000 - 0x0000000074612000 	E:\JDK\jre\bin\msvcr100.dll
+0x000000005c240000 - 0x000000005cadc000 	E:\JDK\jre\bin\server\jvm.dll
+0x000007fef9c20000 - 0x000007fef9c29000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefec40000 - 0x000007fefec8d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefdbb0000 - 0x000007fefdbb8000 	C:\Windows\system32\NSI.dll
+0x000007fefa090000 - 0x000007fefa0cb000 	C:\Windows\system32\WINMM.dll
+0x000007fefc650000 - 0x000007fefc65c000 	C:\Windows\system32\VERSION.dll
+0x0000000077a40000 - 0x0000000077a47000 	C:\Windows\system32\PSAPI.DLL
+0x0000000074530000 - 0x000000007453f000 	E:\JDK\jre\bin\verify.dll
+0x0000000073c60000 - 0x0000000073c89000 	E:\JDK\jre\bin\java.dll
+0x0000000073a60000 - 0x0000000073a83000 	E:\JDK\jre\bin\instrument.dll
+0x00000000742b0000 - 0x00000000742c6000 	E:\JDK\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:G:\IntelliJ IDEA 2018.3.5\lib\idea_rt.jar=62222:G:\IntelliJ IDEA 2018.3.5\bin -Dfile.encoding=UTF-8 
+java_command: org.testng.RemoteTestNGStarter -usedefaultlisteners false -socket62221 @w@C:\Users\dell\AppData\Local\Temp\idea_working_dirs_testng.tmp -temp C:\Users\dell\AppData\Local\Temp\idea_testng.tmp
+java_class_path (initial): G:\IntelliJ IDEA 2018.3.5\lib\idea_rt.jar;G:\IntelliJ IDEA 2018.3.5\plugins\testng\lib\testng-plugin.jar;E:\JDK\jre\lib\charsets.jar;E:\JDK\jre\lib\deploy.jar;E:\JDK\jre\lib\ext\access-bridge-64.jar;E:\JDK\jre\lib\ext\cldrdata.jar;E:\JDK\jre\lib\ext\dnsns.jar;E:\JDK\jre\lib\ext\jaccess.jar;E:\JDK\jre\lib\ext\jfxrt.jar;E:\JDK\jre\lib\ext\localedata.jar;E:\JDK\jre\lib\ext\nashorn.jar;E:\JDK\jre\lib\ext\sunec.jar;E:\JDK\jre\lib\ext\sunjce_provider.jar;E:\JDK\jre\lib\ext\sunmscapi.jar;E:\JDK\jre\lib\ext\sunpkcs11.jar;E:\JDK\jre\lib\ext\zipfs.jar;E:\JDK\jre\lib\javaws.jar;E:\JDK\jre\lib\jce.jar;E:\JDK\jre\lib\jfr.jar;E:\JDK\jre\lib\jfxswt.jar;E:\JDK\jre\lib\jsse.jar;E:\JDK\jre\lib\management-agent.jar;E:\JDK\jre\lib\plugin.jar;E:\JDK\jre\lib\resources.jar;E:\JDK\jre\lib\rt.jar;C:\Users\dell\IdeaProjects\api_autotest\target\test-classes;C:\Users\dell\IdeaProjects\api_autotest\target\classes;C:\Users\PC\Desktop\repository\org\springframework\boot\spring-boot-starter-web\2.1.4.RELEASE\spring-boot-starter-web-2.1.4.RELEASE.jar;C:\Users\PC\Desktop\repository\org\springframework\boot\spring-boot-starter\2.1.4.RELEASE\spring-boot-starter-2.1.4.RELEASE.jar;C:\Users\PC\Desktop\repository\org\springframework\boot\spring-boot\2.1.4.RELEASE\spring-boot-2.1.4.RELEASE.jar;C:\Users\PC\Desktop\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.4.RELEASE\spring-boot-autoconfigure-2.1.4.RELEASE.jar;C:\Users\PC\Desktop\repository\org\springframework\boot\spring-boot-starter-logging\2.1.4.RELEASE\spring-boot-starter-logging-2.1.4.RELEASE.jar;C:\Users\PC\Desktop\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\PC\Desktop\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\PC\Desktop\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\Users\PC\Desktop\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\PC\Desktop\repository\or
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=E:\JDK
+CLASSPATH=.;E:\JDK\lib;E:\JDK\lib\tools.jar;
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;E:\JDK\bin;E:\JDK\jre\bin;E:\SDK_new\tools;E:\SDK_new\platform-tools;E:\SDK_new\platform-tools\adb.exe;C:\Program Files (x86)\Appium;G:\Git;E:\Python36\Lib\site-packages\xmind2testcase-master;F:\3-C端源文件\mingw64\bin;F:\3-C端源文件\mingw64\lib;F:\3-C端源文件\mingw64\include;E:\Python36;E:\Python36\Scripts;C:\Program Files\MySQL\MySQL Server 8.0\bin;E:\Python36\Scripts;C:\Program Files\TortoiseSVN\bin;G:\Scripts\;G:\;.;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;G:\Git\bin;E:\apache-maven-3.6.0\bin;
+USERNAME=dell
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.23864)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 94 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 12481544k(1487192k free), swap 12479684k(3004k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.131-b11) for windows-amd64 JRE (1.8.0_131-b11), built on Mar 15 2017 01:23:53 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Apr 24 18:17:35 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

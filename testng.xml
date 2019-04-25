@@ -3,12 +3,13 @@
 	<test name="自动化测试用例">
 		<parameter name="excelPath" value="case/api-data.xls"></parameter>
 		<parameter name="sheetName" value="Sheet1"></parameter>
+		<!--<parameter name="sheetName" value="Sheet2"></parameter>-->
 		<classes>
 			<class name="com.ydm.api_autotest.ApiTest">
 				<methods>							
 					<include name="apiTest"></include>
 				</methods>
-			</class>	
+			</class>
 		</classes>
 	</test>
 	<listeners>	

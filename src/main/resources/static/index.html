@@ -32,8 +32,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
-			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -45,7 +44,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-				<span class='label suite-start-time'>Apr 23, 2019 11:48:15 AM</span>
+				<span class='label suite-start-time'>Apr 25, 2019 4:25:15 PM</span>
 			</a>
 			<a href='#!'>
 				<span class='label'>v3.0.3</span>
@@ -67,7 +66,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -118,10 +116,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>4</span> test(s) passed</span>
+					<span><span class='strong'>2</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>2</span> test(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -133,10 +131,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>4</span> step(s) passed</span>
+					<span><span class='strong'>2</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>2</span> step(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -151,286 +149,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>desc:登录接口,method:post,url:/DAdmin/loginadmin.do,p...</span>
-						<span class='test-time'>Apr 23, 2019 11:48:23 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 23, 2019 11:48:23 AM</span>
-	<span class='label end-time'>Apr 23, 2019 11:48:23 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+312ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>--- test start ---</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>method:post</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>url:https://blog.qinsy.cn/DAdmin/loginadmin.do</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>param:{"name":"1@qq.com","password":"00"}</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>返回状态码：500</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>resp:&lt;!doctype html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;title&gt;HTTP Status 500 – Internal Server Error&lt;/title&gt;&lt;style type="text/css"&gt;h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 500 – Internal Server Error&lt;/h1&gt;&lt;hr class="line" /&gt;&lt;p&gt;&lt;b&gt;Type&lt;/b&gt; Exception Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;Message&lt;/b&gt; Request processing failed; nested exception is java.lang.NullPointerException&lt;/p&gt;&lt;p&gt;&lt;b&gt;Description&lt;/b&gt; The server encountered an unexpected condition that prevented it from fulfilling the request.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Exception&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
-	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
-	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
-	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Root Cause&lt;/b&gt;&lt;/p&gt;&lt;pre&gt;java.lang.NullPointerException
-	com.jandy.Service.Impl.UserServiceImpl.UserNameType(UserServiceImpl.java:39)
-	com.jandy.Service.Impl.UserServiceImpl.getValidationUser(UserServiceImpl.java:102)
-	com.jandy.controller.DAdminController.Login(DAdminController.java:124)
-	sun.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
-	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	java.lang.reflect.Method.invoke(Method.java:498)
-	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
-	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
-	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
-	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
-	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
-	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
-	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-&lt;/pre&gt;&lt;p&gt;&lt;b&gt;Note&lt;/b&gt; The full stack trace of the root cause is available in the server logs.&lt;/p&gt;&lt;hr class="line" /&gt;&lt;h3&gt;Apache Tomcat/8.5.31&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>验证数据：$.state=1</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'><textarea>com.alibaba.fastjson.JSONException: syntax error, pos 1, json : <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Request processing failed; nested exception is java.lang.NullPointerException</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
-	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
-	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
-	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-</pre><p><b>Root Cause</b></p><pre>java.lang.NullPointerException
-	com.jandy.Service.Impl.UserServiceImpl.UserNameType(UserServiceImpl.java:39)
-	com.jandy.Service.Impl.UserServiceImpl.getValidationUser(UserServiceImpl.java:102)
-	com.jandy.controller.DAdminController.Login(DAdminController.java:124)
-	sun.reflect.GeneratedMethodAccessor99.invoke(Unknown Source)
-	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	java.lang.reflect.Method.invoke(Method.java:498)
-	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116)
-	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
-	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
-	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
-	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
-	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
-	javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/8.5.31</h3></body></html>
-	at com.alibaba.fastjson.parser.DefaultJSONParser.parse(DefaultJSONParser.java:1394)
-	at com.alibaba.fastjson.parser.DefaultJSONParser.parse(DefaultJSONParser.java:1301)
-	at com.alibaba.fastjson.JSON.parse(JSON.java:148)
-	at com.alibaba.fastjson.JSON.parse(JSON.java:139)
-	at com.alibaba.fastjson.JSONPath.read(JSONPath.java:425)
-	at com.ydm.api_autotest.TestBase.getBuildValue(TestBase.java:164)
-	at com.ydm.api_autotest.TestBase.verifyResult(TestBase.java:144)
-	at com.ydm.api_autotest.ApiTest.apiTest(ApiTest.java:187)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>desc:登录接口,method:post,url:/DAdmin/loginadmin.do?n...</span>
-						<span class='test-time'>Apr 23, 2019 11:48:26 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 23, 2019 11:48:26 AM</span>
-	<span class='label end-time'>Apr 23, 2019 11:48:29 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+555ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
-					<td class='step-details'>--- test start ---</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
-					<td class='step-details'>method:post</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
-					<td class='step-details'>url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=1@qq.com&password=123</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
-					<td class='step-details'>param:{"name":"1@qq.com","password":"00"}</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:29 AM</td>
-					<td class='step-details'>返回状态码：200</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:29 AM</td>
-					<td class='step-details'>resp:{"msg":"密码错误!","state":"1","token":""}</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:29 AM</td>
-					<td class='step-details'>验证数据：$.state=6</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:29 AM</td>
-					<td class='step-details'>验证转换后的值1=6</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:29 AM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: 验证预期结果失败。 expected [6] but found [1]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at com.ydm.api_autotest.TestBase.verifyResult(TestBase.java:148)
-	at com.ydm.api_autotest.ApiTest.apiTest(ApiTest.java:187)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>desc:登录接口,method:get,url:/DAdmin/loginadmin.do?na...</span>
-						<span class='test-time'>Apr 23, 2019 11:48:15 AM</span>
+						<span class='test-name'>desc:客户管理/新增客户,method:post,url:/api/customer_mana...</span>
+						<span class='test-time'>Apr 25, 2019 4:25:15 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 23, 2019 11:48:15 AM</span>
-	<span class='label end-time'>Apr 23, 2019 11:48:19 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+882ms</span>
+	<span class='label start-time'>Apr 25, 2019 4:25:15 PM</span>
+	<span class='label end-time'>Apr 25, 2019 4:25:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+474ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -444,57 +173,37 @@
 			<tbody>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:15 AM</td>
+					<td class='timestamp'>4:25:15 PM</td>
 					<td class='step-details'>--- test start ---</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:15 AM</td>
-					<td class='step-details'>method:get</td>
+					<td class='timestamp'>4:25:15 PM</td>
+					<td class='step-details'>method:post</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:15 AM</td>
-					<td class='step-details'>url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=1@qq.com&password=21232f297a57a5a743894a0e4a801fc3</td>
+					<td class='timestamp'>4:25:15 PM</td>
+					<td class='step-details'>url:https://saas.ydm01.cn/api/customer_manage/customerArchivesAdd</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:15 AM</td>
-					<td class='step-details'>param:</td>
+					<td class='timestamp'>4:25:15 PM</td>
+					<td class='step-details'>param:{"birthday":"2019-04-25","branchID":81370,"cityID":"","company":"工作单位:珜W1O瘤1W攺c垇歸z顎Q梵G8NLs认蹱x鍠T瑍粡6舄w","customerName":"姓名:8埅J麶抸p讂覘z掍","customerPhone":42935720935,"customerPresent":"客户简介:e妁堛NJ8漾Y党K賨燺伸E姼瑜5孶x蒽鵯湭i7鸯T辚冇lw","customerSourceID":273,"email":"youxiang@qq.com","gender":2,"hobby":"兴趣爱好:5n憏h埶o僧鼊W疵蹭胟FA銋4t歼駏Y年呻膧雲熨SR醶LE","isGuDong":0,"provinceID":2,"saleID":168087,"shareholder":[],"sparePhone":"17726079055","address":"1醾N鈄MWJt碥胴癜佻裎52z鈆簸w噀J徵祏壹褖14EOn","specialNeeds":"特殊需求:懣鱩6鲥KvQV傏嵰V侩禆垍CQB酗堕趐Xz醡蚜rC錥M藼項","weixin":"微信:铐0睗鈒悅逥聪墲踣BD嗗w嬥A濷嫸e賭y絿梿銲羒X氧瘊b1Z","workPost":"工作职务:l6捏3哺X蒀笳鄂腞创蘥辩Fb匥輇扷哚LIxm猕嘈zQl臞4"}</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
+					<td class='timestamp'>4:25:15 PM</td>
 					<td class='step-details'>返回状态码：200</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
-					<td class='step-details'>resp:{"msg":"登陆成功！!","state":"0","token":"e5bf21bcd0799426e308a02ede66f440"}</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
-					<td class='step-details'>验证数据：$.state=0</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
-					<td class='step-details'>验证转换后的值0=0</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
-					<td class='step-details'>存储公共参数   first_state值为：0.</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
-					<td class='step-details'>存储公共参数   first_token值为：e5bf21bcd0799426e308a02ede66f440.</td>
+					<td class='timestamp'>4:25:15 PM</td>
+					<td class='step-details'>resp:{"msg":"操作成功","status":"100","userId":353760}</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
+					<td class='timestamp'>4:25:15 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -504,17 +213,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>desc:登录接口,method:get,url:/DAdmin/loginadmin.do?na...</span>
-						<span class='test-time'>Apr 23, 2019 11:48:19 AM</span>
+						<span class='test-name'>desc:客户管理/新增客户,method:post,url:/api/customer_mana...</span>
+						<span class='test-time'>Apr 25, 2019 4:25:15 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 23, 2019 11:48:19 AM</span>
-	<span class='label end-time'>Apr 23, 2019 11:48:21 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+942ms</span>
+	<span class='label start-time'>Apr 25, 2019 4:25:15 PM</span>
+	<span class='label end-time'>Apr 25, 2019 4:25:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+180ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -528,195 +237,37 @@
 			<tbody>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
+					<td class='timestamp'>4:25:15 PM</td>
 					<td class='step-details'>--- test start ---</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
-					<td class='step-details'>method:get</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
-					<td class='step-details'>url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=1@qq.com&password=123</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:19 AM</td>
-					<td class='step-details'>param:</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>返回状态码：200</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>resp:{"msg":"密码错误!","state":"1","token":""}</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>验证数据：$.state=1</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>验证转换后的值1=1</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>desc:登录接口,method:get,url:/DAdmin/loginadmin.do?na...</span>
-						<span class='test-time'>Apr 23, 2019 11:48:21 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 23, 2019 11:48:21 AM</span>
-	<span class='label end-time'>Apr 23, 2019 11:48:23 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+960ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>--- test start ---</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>method:get</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=111111111111@qq.com&password=123</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:21 AM</td>
-					<td class='step-details'>param:</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>返回状态码：200</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>resp:{"msg":"登陆失败-账号不存在！","state":"6","token":""}</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>验证数据：$.state=6</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>验证转换后的值6=6</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>desc:登录接口,method:post,url:/DAdmin/loginadmin.do?n...</span>
-						<span class='test-time'>Apr 23, 2019 11:48:23 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Apr 23, 2019 11:48:23 AM</span>
-	<span class='label end-time'>Apr 23, 2019 11:48:26 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+945ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>--- test start ---</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
+					<td class='timestamp'>4:25:15 PM</td>
 					<td class='step-details'>method:post</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>url:https://blog.qinsy.cn/DAdmin/loginadmin.do?name=111111111111@qq.com&password=123</td>
+					<td class='timestamp'>4:25:15 PM</td>
+					<td class='step-details'>url:https://saas.ydm01.cn/api/customer_manage/customerArchivesAdd</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:23 AM</td>
-					<td class='step-details'>param:{"name":"1@qq.com","password":"00"}</td>
+					<td class='timestamp'>4:25:15 PM</td>
+					<td class='step-details'>param:{"birthday":"2019-04-25","branchID":81370,"cityID":"","company":"工作单位","customerName":"姓名","customerPhone":62953312747423996633,"customerPresent":"客户简介","customerSourceID":273,"email":"youxiang@qq.com","gender":2,"hobby":"兴趣爱好","address":"s擵鋰骍坏u櫌Y誄狇8椛J癧鈾膆7PHP惎炩癧錱J良9Lu砱","isGuDong":0,"provinceID":2,"saleID":168087,"shareholder":[],"sparePhone":"17726079055","specialNeeds":"特殊需求","weixin":"微信","workPost":"工作职务"}</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
+					<td class='timestamp'>4:25:15 PM</td>
 					<td class='step-details'>返回状态码：200</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
-					<td class='step-details'>resp:{"msg":"登陆失败-账号不存在！","state":"6","token":""}</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
-					<td class='step-details'>验证数据：$.state=6</td>
-				</tr>
-				<tr class='log' status='debug'>
-					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
-					<td class='step-details'>验证转换后的值6=6</td>
+					<td class='timestamp'>4:25:15 PM</td>
+					<td class='step-details'>resp:{"msg":"操作成功","status":"100","userId":353761}</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>11:48:26 AM</td>
+					<td class='timestamp'>4:25:15 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -748,98 +299,7 @@
 	<!-- subview right -->
 
 </div>
-<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
-	
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-					<i class='material-icons'>search</i> Search
-				</a>
-				
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-				
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-
-	<div class='subview-left left'>
-		
-		<div class='view-summary'>
-			<h5>Exceptions</h3>
-			<ul id='exception-collection' class='exception-collection'>
-				
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>	
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 23, 2019 11:48:26 AM</td>
-										<td class='linked' test-id='2'>desc:登录接口,method:post,url:/DAdmin/loginadmin.do?n...</td>
-										<td><pre><pre>java.lang.AssertionError: 验证预期结果失败。 expected [6] but found [1]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at com.ydm.api_autotest.TestBase.verifyResult(TestBase.java:148)
-	at com.ydm.api_autotest.ApiTest.apiTest(ApiTest.java:187)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</pre></pre></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -847,31 +307,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 23, 2019 11:48:15 AM</div>
+					<div class='panel-lead'>Apr 25, 2019 4:25:15 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 23, 2019 11:48:29 AM</div>
+			 		<div class='panel-lead'>Apr 25, 2019 4:25:16 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>13,768ms</div>
+					<div class='panel-lead'>782ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -923,22 +383,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 4,
-				failParent: 2,
+				passParent: 2,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 0,
 				
-				passChild: 4,
-				failChild: 2,
+				passChild: 2,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 51,
+				exceptionsChild: 12,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

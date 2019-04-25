@@ -1,10 +1,10 @@
 package com.ydm.api_autotest.beans;
 
 public class ApiDataBean extends BaseBean {
-	private boolean run;
+	private boolean run;//
 	private String desc; // 接口描述
-	private String url;
-	private String method;
+	private String url;//接口
+	private String method;//类型
 	private String param;
 	private boolean contains;
 	private int status;
