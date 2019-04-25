@@ -15,6 +15,7 @@
 	<listeners>	
 		<listener class-name="com.ydm.api_autotest.listeners.AutoTestListener"></listener>
 		<listener class-name="com.ydm.api_autotest.listeners.RetryListener"></listener>
+
 		<!-- ReportNg 报告  -->	
 		<!--  
 		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
