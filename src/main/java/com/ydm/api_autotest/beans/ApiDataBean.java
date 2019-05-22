@@ -1,5 +1,6 @@
 package com.ydm.api_autotest.beans;
 
+
 public class ApiDataBean extends BaseBean {
 	private boolean run;//
 	private String desc; // 接口描述
